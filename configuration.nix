@@ -1,33 +1,33 @@
 # ============================================================
-#  Decibel OS — Root Configuration
+#  Decibel OS ? — Root Configuration
 #  /etc/nixos/configuration.nix
 #
 #  This is the entry point for your entire system config.
-#  It doesn't define anything itself — it just pulls in
+#  It doesn't define anything itself, it just pulls in
 #  all the other modules and lets them do their thing.
 #
 #  Think of this as the server list. Each import below
-#  is a channel with its own purpose.
+#  is like a channel with its own purpose.
 # ============================================================
 
 { config, pkgs, lib, ... }: {
 
   imports = [
-    ./hardware-configuration.nix  # Auto-generated during install, don't touch
-    ./parlor.nix                  # Visual environment — start here
+    ./hardware-configuration.nix  # Auto-generated during install, not suppose to touch this
+    ./parlor.nix                  # visual, environments
     ./packages.nix                # Everything installed on your system
     ./users.nix                   # Your user accounts and permissions
     ./network.nix                 # Networking, firewall, Bluetooth
-    ./audio.nix                   # Sound — Pipewire and friends
-    ./display.nix                 # Compositor, greeter, display settings
+    ./audio.nix                   # Sound, Pipewire and friends
+    ./display.nix                 # Compositor, greeter, display settings in general
     ./dev.nix                     # Development tools and environments
-    ./services.nix                # Background daemons and system services
+    ./services.nix                # Background daemons & system services
   ];
 
-  # ── System Identity ──────────────────────────────────────
+  # ── Nix's Identity ──────────────────────────────────────
   networking.hostName = "decibel";
 
-  # ── Nix Settings ─────────────────────────────────────────
+  # ── Nix's Settings ─────────────────────────────────────────
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     auto-optimise-store = true;
