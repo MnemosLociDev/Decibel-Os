@@ -3,7 +3,7 @@
 #  /etc/nixos/dev.nix
 #
 #  Development tools and environments.
-#  Rust ships by default — it's the language Decibel OS
+#  Rust ships by default, it's the language Decibel OS
 #  itself is being built with.
 #
 #  Other runtimes are available but opt-in — install what
@@ -14,7 +14,7 @@
 
   # ── Rust ─────────────────────────────────────────────────
   # Ships with Decibel OS by default.
-  # Rust is the primary language of the Decibel OS ecosystem.
+  # Rust is the primary language of the Decibel OS ecosystem, Rewrite Realism In Rust
   environment.systemPackages = with pkgs; [
 
     # ── Rust ───────────────────────────────────────────────
@@ -34,9 +34,9 @@
                       # Gives access to apt, dnf, etc. from NixOS
 
     # ── Dev Utilities ──────────────────────────────────────
-    jq                # JSON processor — essential for scripting
+    jq                # JSON processor. essential for scripting
     httpie            # Friendly HTTP client
-    bruno             # API testing — open source Postman alternative
+    bruno             # API testing, open source Postman alternative
     sqlite            # Lightweight database
 
     # ── Optional Runtimes ──────────────────────────────────
@@ -44,7 +44,7 @@
 
     # nodejs_20       # JavaScript/TypeScript runtime
     # python3         # Python
-    # go              # Golang
+    # go              # Golang  // The Future Btw
     # jdk17           # Java
 
   ];
@@ -91,7 +91,7 @@
       rollback = "sudo nixos-rebuild switch --rollback";
 
       # Bat as cat
-      cat   = "bat";
+      cat  = "bat";
     };
   };
 

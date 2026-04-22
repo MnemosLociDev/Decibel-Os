@@ -22,12 +22,15 @@
   environment.systemPackages = with pkgs; [
 
     # ── Terminal & Shell ───────────────────────────────────
-    wezterm          # Default terminal — Rust-based, multiplexing built-in
+    wezterm          # Default terminal, Rust-based, multiplexing built-in
+    ghostty          # ALternative terminal
     zsh              # Default shell
-    starship         # Cross-shell prompt — Rust-based
+    zinit
+    starship         # Cross-shell prompt, Rust-based
     zellij           # Terminal multiplexer (optional but available)
 
     # ── CLI Essentials ─────────────────────────────────────
+    fastfetch        # Fetch tool
     git              # Version control — non-negotiable
     eza              # Modern ls replacement with icons and color
     bat              # cat with syntax highlighting
@@ -42,14 +45,15 @@
     zip
 
     # ── Editors ────────────────────────────────────────────
-    zed-editor       # Primary GUI editor — fast, Rust-based
-    neovim           # Terminal editor — for when you go full terminal
+    zed-editor       # Primary GUI editor fast, Rust-based
+    neovim           # Terminal editor, for when you go full terminal
 
     # ── Browser ────────────────────────────────────────────
-    librewolf        # Privacy-first Firefox fork
+    brave     # Chromium Based Web Browser
+    zen-browser # Fork of mozilla firefox, better privacy based features
 
     # ── Chat ───────────────────────────────────────────────
-    vesktop          # Better Discord client — fixes screensharing on Linux
+    vesktop          # Better Discord client, fixes screensharing on Linux
 
     # ── File Management ────────────────────────────────────
     nemo             # GUI file manager — clean and not bloated
@@ -70,6 +74,10 @@
     # ── System Tools ───────────────────────────────────────
     gparted          # Disk partition manager
     timeshift        # System snapshots and restore points
+    filelight        # Directory based disk analyzer
+    popsicle         # ISO Image Write
+
+
 
   ];
 

@@ -14,7 +14,7 @@
   # ── Primary User ─────────────────────────────────────────
   users.users.decibel = {           # Change "decibel" to your username
     isNormalUser = true;
-    description  = "Decibel OS User";
+    description  = "Decibite";
     shell        = pkgs.zsh;        # Zsh as default shell
 
     # Groups define what your user is allowed to do.

@@ -15,9 +15,13 @@
   # ── Compositor ───────────────────────────────────────────
   # Niri is a scrollable tiling Wayland compositor.
   # Written in Rust. Fast, minimal, and very riced.
+  # Ships with this for now
   programs.niri = {
     enable = true;
   };
+
+  # --- Desktop Env -----------------------------------------
+  # KDE OR GNOME PROLLY
 
   # ── Fonts ────────────────────────────────────────────────
   # JetBrains Mono Nerd Font is the default coding font.
@@ -37,19 +41,19 @@
 
   # ── GTK Theme ────────────────────────────────────────────
   # Controls how GTK apps (most Linux apps) look.
-  # TODO: Define Decibel OS custom theme
+  # TBD, Define Decibel OS custom theme
   programs.dconf.enable = true;
 
   # ── Cursor ───────────────────────────────────────────────
-  # TODO: Define Decibel OS custom cursor theme
+  # TBD, Define Decibel OS custom cursor theme
   environment.variables = {
     XCURSOR_SIZE = "24";
   };
 
   # ── Color Scheme ─────────────────────────────────────────
-  # Decibel OS color palette — dark purple base.
+  # Decibel OS color palette, dark purple base.
   # These variables are available system-wide.
-  # TODO: Finalize full palette
+  # TBD, Finalize full palette
   environment.variables = {
     DECIBEL_ACCENT     = "#7289DA";   # Discord-nodding purple
     DECIBEL_BACKGROUND = "#1E1E2E";   # Deep dark base

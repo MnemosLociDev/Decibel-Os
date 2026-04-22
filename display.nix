@@ -20,7 +20,7 @@
   # ── Login Greeter ────────────────────────────────────────
   # Greetd is a minimal login manager that works with any compositor.
   # ReGreet is a clean GTK greeter that sits on top of it.
-  # TODO: Replace with custom Decibel OS themed greeter
+  # TBD, Replace with custom Decibel OS themed greeter
   services.greetd = {
     enable = true;
     settings = {
@@ -32,7 +32,7 @@
   };
 
   # ── Hardware Acceleration ────────────────────────────────
-  # Intel UHD 620 — VA-API hardware video acceleration
+  # Intel UHD 620 — VA-API hardware video acceleration // For Me Change This
   hardware.opengl = {
     enable = true;
     driSupport = true;
@@ -54,7 +54,7 @@
 
   # ── Night Light ──────────────────────────────────────────
   # Reduces blue light in the evening.
-  # TODO: Pick between wlsunset or gammastep
+  # TBD, Pick between wlsunset or gammastep
   # services.wlsunset = {
   #   enable = true;
   #   latitude = "0.0";   # Set your latitude

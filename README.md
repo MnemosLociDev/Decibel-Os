@@ -110,7 +110,7 @@ sudo nixos-rebuild switch
 
 ## The Decibel OS Philosophy
 
-**Freedom through structure.** NixOS gives you total control but that control can be overwhelming. Decibel OS gives that control a shape — each file knows its job, beginners know where to start, power users know where to dig.
+**Freedom through structure.** NixOS gives you total control but that control can be overwhelming. Decibel OS gives that control a shape, each file knows its job, beginners know where to start, power users know where to dig & die.
 
 You start in `parlor.nix`. You make it yours. You get curious. You explore the other files. Before you know it you understand your whole system. That's the path.
 
@@ -120,4 +120,4 @@ You start in `parlor.nix`. You make it yours. You get curious. You explore the o
 
 ---
 
-*Decibel OS — where the system has good acoustics.* 🎵
+*Decibel OS — where the system has good acoustics, an operating system with a voice.* 🎵
