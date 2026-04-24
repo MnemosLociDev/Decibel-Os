@@ -25,7 +25,7 @@
     wezterm          # Default terminal, Rust-based, multiplexing built-in
     ghostty          # ALternative terminal
     zsh              # Default shell
-    zinit
+    zinit            # Advance Directory Navigation for ZSH
     starship         # Cross-shell prompt, Rust-based
     zellij           # Terminal multiplexer (optional but available)
 
@@ -39,8 +39,8 @@
     fzf              # Fuzzy finder — transforms your workflow
     fd               # Faster find
     btop             # Modern system monitor
-    wget
-    curl
+    wget             #
+    curl             #
     unzip
     zip
 
